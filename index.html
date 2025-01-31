@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arehaant's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Arehaant's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Arehaant's Portfolio</h1>
+            <p>Hi, I'm <span class="highlight">Arehaant</span>, a passionate developer showcasing my projects here.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+           
+            <div class="project-card">
+                <img src="images/drone.png" alt="Semi-autonomous drone for water rescue">
+                <h3>Float - Guard</h3>
+                <p>A <strong>semi-autonomous</strong> drone that will help rescuers to rescue people in water emergency situations.</p>
+                <a href="float-guard.html" class="btn" target="_blank">View Project</a>
+            </div>
+    
+           
+            <div class="project-card">
+                <img src="images/blackandwhite.png" alt="Java-based news application">
+                <h3>Black & White</h3>
+                <p>A <strong>Java</strong>-based news application that provides news to users by fetching them from an <strong>API</strong>.</p>
+                <a href="black-and-white.html" class="btn" target="_blank">View Project</a>
+            </div>
+    
+           
+            <div class="project-card">
+                <img src="images/wheel.png" alt="Semi-autonomous wheelchair for disabled people">
+                <h3>Wheel-Chair for Physically Disabled People</h3>
+                <p>A <strong>semi-autonomous wheelchair</strong> for physically disabled people to improve their mobility.</p>
+                <a href="wheel-chair.html" class="btn" target="_blank">View Project</a>
+            </div>
+    
+            
+            <div class="project-card">
+                <img src="images/media.png" alt="Media sharing website built with WordPress">
+                <h3>A Media Hub</h3>
+                <p>A media-sharing website made using <strong>WordPress CMS</strong>.</p>
+                <a href="media-hub.html" class="btn" target="_blank">View Project</a>
+            </div>
+    
+           
+            <div class="project-card">
+                <img src="images/fps.png" alt="FPS game made with Unity and C#">
+                <h3>A FPS Game</h3>
+                <p>An FPS game made in <strong>Unity Engine</strong> using <strong>C#</strong>.</p>
+                <a href="fps-game.html" class="btn" target="_blank">View Project</a>
+            </div>
+    
+            <div class="project-card">
+                <img src="images/web.png" alt="Description of the new project">
+                <h3>Personal Portfolio Website</h3>
+                <p>A<B> HTML , CSS , Javascript</B> based prsonal portfolio website to showcase own work.</p>
+                <a href="new-project.html" class="btn" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://formspree.io/f/mwpvblvq" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <div id="loading-spinner" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+        <p id="form-status"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Arehaant. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/AP1339"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/arehaant-desai-692934264/"><i class="fab fa-linkedin"></i></a>
+           
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
